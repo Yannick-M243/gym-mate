@@ -21,9 +21,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
+    .title {
+        font-size: $biggest-font;
         padding: 20px;
     }
+
     ul {
         li {
             display: inline-block;
@@ -188,6 +190,132 @@ body {
     }
 }
 
+//This is the style for the Whole About Me page
+#about-me {
+    #section1 {
+        display: flex;
+        justify-content: center;
+        background: $light-primary;
+        margin-bottom: 85px;
+        .container {
+            width: 70%;
+            padding: 20px 0;
+
+            border-radius: 20px;
+            justify-content: space-between;
+            align-items: center;
+            .text-container {
+                color: $white;
+                h2 {
+                    font-size: $big-font;
+                    padding: 15px;
+                }
+                p {
+                    font-size: 16px;
+                    padding: 15px;
+                }
+                min-height: 35%;
+                width: 50%;
+            }
+
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: 50%;
+                img {
+                    border-radius: 20px;
+                    width: 450px;
+                    height: 600px;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+//This is the style for the Whole Nutrition page
+#nutrition {
+    #section1 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: $light-primary;
+        .container {
+            justify-content: space-between;
+            width: 70%;
+            align-items: center;
+            .text-container {
+                width: 50%;
+                color: $white;
+                p,
+                span {
+                    padding: 25px;
+                }
+            }
+            .image-container {
+                width: 40%;
+                img {
+                    width: 150px;
+                    height: 150px;
+                }
+            }
+        }
+    }
+    #section2 {
+        background: $white-transparent;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2,
+        ul {
+            padding: 20px;
+        }
+        .container {
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+        .text-container {
+            width: 40%;
+            padding: 20px;
+        }
+    }
+    #table-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .table-container {
+            min-width: 430px;
+            font-size: $small-font;
+            padding: 40px 0;
+            width: 70%;
+            table,
+            th,
+            td {
+                border: 2px solid $primary;
+            }
+            td {
+                padding: 10px;
+                width: 33%;
+                text-align: center;
+                a {
+                    font-weight: bold;
+                    color: $primary;
+                }
+            }
+            th {
+                font-size: $regular-font;
+            }
+        }
+    }
+    .table1 {
+        margin-bottom: 70px;
+    }
+}
 //This is a media query for screen smaller than 1200px
 @media screen and (max-width: 1200px) {
     #index {
@@ -197,27 +325,26 @@ body {
                 height: fit-content !important;
             }
         }
-    }
-    #section2 {
-        .container {
-            width: 100% !important;
-            font-size: $small-font !important;
-            height: fit-content !important;
-            border-radius: 0 !important;
-        }
-        .image-container {
-            //align-items: center;
-            //flex-direction: column;
-            img {
-                width: 70% !important;
-                padding: 10px 0 !important;
+
+        #section2 {
+            .container {
+                width: 100% !important;
+                font-size: $small-font !important;
+                height: fit-content !important;
+                border-radius: 0 !important;
+            }
+            .image-container {
+                img {
+                    width: 70% !important;
+                    padding: 10px 0 !important;
+                }
             }
         }
-    }
-    #section3 {
-        .advices {
-            margin: 10px;
-            width: 50% !important;
+        #section3 {
+            .advices {
+                margin: 10px;
+                width: 50% !important;
+            }
         }
     }
     #about-me {
@@ -271,9 +398,51 @@ body {
         }
     }
 }
+//This is a media query for screen smaller than 648px
+@media screen and (max-width: 768px) {
+    #nutrition {
+        #section1 {
+            .container {
+                flex-direction: column-reverse;
+                justify-content: center;
+                width: 100%;
+            }
+            .text-container {
+                width: 90% !important;
+            }
+            .image-container {
+                display: flex;
+                padding: 20px;
+                justify-content: center;
+                width: 85% !important;
+            }
+        }
+        #section2 {
+            .container {
+                flex-direction: column-reverse;
+                justify-content: center;
+                width: 100%;
+            }
+            .text-container {
+                border: none !important;
+                width: 90% !important;
+            }
+        }
+    }
+}
 
 //This is a media query for screen smaller than 648px
 @media screen and (max-width: 648px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        ul {
+            li {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
     #section3 {
         .container {
             width: 100%;
@@ -290,47 +459,6 @@ body {
             flex-direction: column;
             img {
                 width: 80% !important;
-            }
-        }
-    }
-}
-
-//This is the style for the Whole About Me page
-#about-me {
-    #section1 {
-        display: flex;
-        justify-content: center;
-        background: $light-primary;
-        .container {
-            width: 70%;
-            padding: 20px 0;
-            border-radius: 20px;
-            justify-content: space-between;
-            align-items: center;
-            .text-container {
-                color: $white;
-                h2 {
-                    font-size: $big-font;
-                    padding: 15px;
-                }
-                p {
-                    font-size: 16px;
-                    padding: 15px;
-                }
-                min-height: 35%;
-                width: 50%;
-            }
-
-            .image-container {
-                display: flex;
-                justify-content: center;
-                width: 50%;
-                img {
-                    border-radius: 20px;
-                    width: 450px;
-                    height: 600px;
-                    opacity: 0.8;
-                }
             }
         }
     }
