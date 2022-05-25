@@ -1,8 +1,5 @@
-@import "colors";
-$biggest-font: 40px;
-$big-font: 27px;
-$regular-font: 18px;
-$small-font: 14px;
+@import "components";
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +11,7 @@ body {
     color: $primary;
 }
 
+//This is the whole style for the navigation bar
 .navbar {
     font-size: $regular-font;
     padding: 10px 0;
@@ -54,8 +52,9 @@ body {
         font-size: $biggest-font;
     }
 }
-//This is the style for the index page
-.index {
+
+//This is the whole style for the index page
+#index {
     #section1 {
         display: flex;
         justify-content: center;
@@ -77,7 +76,7 @@ body {
                     font-size: $regular-font;
                     padding: 20px;
                 }
-                background: #4b468e9e;
+                background: $light-primary;
                 border-radius: 20px;
                 min-height: 40%;
                 width: 40%;
@@ -188,8 +187,10 @@ body {
         }
     }
 }
+
+//This is a media query for screen smaller than 1200px
 @media screen and (max-width: 1200px) {
-    .index {
+    #index {
         #section1 {
             .container {
                 width: 90% !important;
@@ -219,7 +220,7 @@ body {
             width: 50% !important;
         }
     }
-    .about-me {
+    #about-me {
         #section1 {
             .container {
                 width: 100% !important;
@@ -228,8 +229,9 @@ body {
     }
 }
 
+//This is a media query for screen smaller than 850px
 @media screen and (max-width: 850px) {
-    .index {
+    #index {
         #section1 {
             .container {
                 flex-direction: column;
@@ -248,7 +250,7 @@ body {
             }
         }
     }
-    .about-me {
+    #about-me {
         #section1 {
             .container {
                 flex-direction: column !important;
@@ -269,6 +271,8 @@ body {
         }
     }
 }
+
+//This is a media query for screen smaller than 648px
 @media screen and (max-width: 648px) {
     #section3 {
         .container {
@@ -290,12 +294,13 @@ body {
         }
     }
 }
-//Style for About Me page
-.about-me {
+
+//This is the style for the Whole About Me page
+#about-me {
     #section1 {
         display: flex;
         justify-content: center;
-        background: #4b468e9e;
+        background: $light-primary;
         .container {
             width: 70%;
             padding: 20px 0;
@@ -331,6 +336,7 @@ body {
     }
 }
 
+//This is the style for the whole footer
 footer {
     margin-top: 30px;
     min-height: 90px;

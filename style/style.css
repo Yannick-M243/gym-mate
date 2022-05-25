@@ -1,3 +1,4 @@
+/*This SCSS file conatains components reused in the style.scss file*/
 * {
   margin: 0;
   padding: 0;
@@ -63,7 +64,7 @@ body {
   font-size: 40px;
 }
 
-.index #section1 {
+#index #section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +74,7 @@ body {
   background: rgba(255, 255, 255, 0.323);
 }
 
-.index #section1 .container {
+#index #section1 .container {
   height: 550px;
   width: 70%;
   padding: 20px 0;
@@ -85,7 +86,7 @@ body {
           align-items: center;
 }
 
-.index #section1 .container .text-container {
+#index #section1 .container .text-container {
   color: #fffafa;
   background: #4b468e9e;
   border-radius: 20px;
@@ -93,17 +94,17 @@ body {
   width: 40%;
 }
 
-.index #section1 .container .text-container h2 {
+#index #section1 .container .text-container h2 {
   font-size: 27px;
   padding: 20px;
 }
 
-.index #section1 .container .text-container p {
+#index #section1 .container .text-container p {
   font-size: 18px;
   padding: 20px;
 }
 
-.index #section1 .container .image-container {
+#index #section1 .container .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,14 +117,14 @@ body {
   width: 50%;
 }
 
-.index #section1 .container .image-container img {
+#index #section1 .container .image-container img {
   border-radius: 20px;
   min-width: 80%;
   min-height: 450px;
   opacity: 0.8;
 }
 
-.index #section2 {
+#index #section2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,7 +133,7 @@ body {
           justify-content: center;
 }
 
-.index #section2 .container {
+#index #section2 .container {
   padding: 40px 0;
   width: 70%;
   -webkit-box-pack: center;
@@ -145,28 +146,28 @@ body {
   text-align: center;
 }
 
-.index #section2 p,
-.index #section2 h2,
-.index #section2 span {
+#index #section2 p,
+#index #section2 h2,
+#index #section2 span {
   padding: 20px;
 }
 
-.index #section2 h2 {
+#index #section2 h2 {
   font-size: 27px;
 }
 
-.index #section2 p,
-.index #section2 span {
+#index #section2 p,
+#index #section2 span {
   font-size: 18px;
 }
 
-.index #section2 p a,
-.index #section2 span a {
+#index #section2 p a,
+#index #section2 span a {
   color: #4b468e;
   font-weight: bold;
 }
 
-.index #section2 .image-container {
+#index #section2 .image-container {
   padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,13 +176,13 @@ body {
       justify-content: space-around;
 }
 
-.index #section2 .image-container .morphotype {
+#index #section2 .image-container .morphotype {
   height: 300px;
   width: 300px;
   border-radius: 10px;
 }
 
-.index #section3 {
+#index #section3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +191,7 @@ body {
           justify-content: center;
 }
 
-.index #section3 .container {
+#index #section3 .container {
   padding: 40px 0;
   width: 70%;
   -ms-flex-pack: distribute;
@@ -200,19 +201,19 @@ body {
           align-items: center;
 }
 
-.index #section3 .container h2 {
+#index #section3 .container h2 {
   text-align: center;
   padding: 20px;
   font-size: 27px;
 }
 
-.index #section3 .container p {
+#index #section3 .container p {
   padding: 20px;
   font-size: 18px;
   text-align: center;
 }
 
-.index #section3 .container .advices {
+#index #section3 .container .advices {
   border: solid 2px;
   border-radius: 10px;
   border-color: #4b468e;
@@ -228,7 +229,7 @@ body {
   background: rgba(255, 255, 255, 0.323);
 }
 
-.index #section3 .container .link-container {
+#index #section3 .container .link-container {
   margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -246,7 +247,7 @@ body {
   background: #4b468e;
 }
 
-.index #section3 .container a {
+#index #section3 .container a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -255,13 +256,13 @@ body {
   font-size: 18px;
 }
 
-.index #section3 .container .link-container:hover {
+#index #section3 .container .link-container:hover {
   background: #bbcaca;
   color: #4b468e;
 }
 
 @media screen and (max-width: 1200px) {
-  .index #section1 .container {
+  #index #section1 .container {
     width: 90% !important;
     height: -webkit-fit-content !important;
     height: -moz-fit-content !important;
@@ -283,47 +284,47 @@ body {
     margin: 10px;
     width: 50% !important;
   }
-  .about-me #section1 .container {
+  #about-me #section1 .container {
     width: 100% !important;
   }
 }
 
 @media screen and (max-width: 850px) {
-  .index #section1 .container {
+  #index #section1 .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     border-radius: 0 !important;
   }
-  .index #section1 .text-container {
+  #index #section1 .text-container {
     width: 90% !important;
     padding: 15px !important;
   }
-  .index #section1 .image-container {
+  #index #section1 .image-container {
     width: 90% !important;
     padding: 15px;
   }
-  .index #section1 .image-container img {
+  #index #section1 .image-container img {
     width: 100% !important;
   }
-  .about-me #section1 .container {
+  #about-me #section1 .container {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
     width: 90% !important;
   }
-  .about-me #section1 .container img {
+  #about-me #section1 .container img {
     width: 90% !important;
   }
-  .about-me #section1 .container .text-container {
+  #about-me #section1 .container .text-container {
     width: 90% !important;
   }
-  .about-me #section1 .container .image-container {
+  #about-me #section1 .container .image-container {
     width: 90% !important;
   }
-  .about-me #section1 .container .image-container img {
+  #about-me #section1 .container .image-container img {
     width: 90% !important;
   }
 }
@@ -354,7 +355,7 @@ body {
   }
 }
 
-.about-me #section1 {
+#about-me #section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -364,7 +365,7 @@ body {
   background: #4b468e9e;
 }
 
-.about-me #section1 .container {
+#about-me #section1 .container {
   width: 70%;
   padding: 20px 0;
   border-radius: 20px;
@@ -376,23 +377,23 @@ body {
           align-items: center;
 }
 
-.about-me #section1 .container .text-container {
+#about-me #section1 .container .text-container {
   color: #fffafa;
   min-height: 35%;
   width: 50%;
 }
 
-.about-me #section1 .container .text-container h2 {
+#about-me #section1 .container .text-container h2 {
   font-size: 27px;
   padding: 15px;
 }
 
-.about-me #section1 .container .text-container p {
+#about-me #section1 .container .text-container p {
   font-size: 16px;
   padding: 15px;
 }
 
-.about-me #section1 .container .image-container {
+#about-me #section1 .container .image-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +403,7 @@ body {
   width: 50%;
 }
 
-.about-me #section1 .container .image-container img {
+#about-me #section1 .container .image-container img {
   border-radius: 20px;
   width: 450px;
   height: 600px;
