@@ -1,3 +1,4 @@
+//importing variables from _components.scss
 @import "components";
 
 * {
@@ -243,6 +244,19 @@ body {
         }
         .form-container {
             display: inline-block;
+        }
+        button {
+            height: 30px;
+            width: 100px;
+            color: $white;
+            background: $light-primary;
+            border-radius: 10px;
+            border: none;
+            margin: 10px;
+        }
+        button:hover {
+            background: $secondary;
+            color: $primary;
         }
     }
 }

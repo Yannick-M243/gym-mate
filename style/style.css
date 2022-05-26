@@ -342,6 +342,21 @@ body {
   display: inline-block;
 }
 
+#about-me #section2 button {
+  height: 30px;
+  width: 100px;
+  color: #fffafa;
+  background: #4b468e9e;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+}
+
+#about-me #section2 button:hover {
+  background: #bbcaca;
+  color: #4b468e;
+}
+
 #training #section1 {
   height: auto;
   display: -webkit-box;
