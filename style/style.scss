@@ -231,6 +231,87 @@ body {
             }
         }
     }
+    #section2 {
+        display: flex;
+        justify-content: center;
+        .container {
+            flex-direction: column;
+            border-radius: 20px;
+            width: 60%;
+            padding: 20px;
+            background: $white-transparent;
+        }
+        .form-container {
+            display: inline-block;
+        }
+    }
+}
+
+//This is the whole style for the Training page
+#training {
+    #section1 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: $light-primary;
+        .container {
+            justify-content: space-between;
+            width: 70%;
+            align-items: center;
+            .text-container {
+                width: 50%;
+                color: $white;
+                p,
+                span {
+                    padding: 25px;
+                }
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+    #section2 {
+        background: $white-transparent;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            padding: 20px;
+        }
+        .container {
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+        .text-container {
+            width: 40%;
+            padding: 20px;
+        }
+    }
+    .bonus {
+        background: none !important;
+        margin: 100px 0;
+        .container {
+            background: $light-primary;
+            flex-direction: row-reverse;
+            border-radius: 20px;
+        }
+        .image-container {
+            img {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+    }
 }
 
 //This is the style for the Whole Nutrition page
@@ -253,10 +334,12 @@ body {
                 }
             }
             .image-container {
+                display: flex;
+                justify-content: center;
                 width: 40%;
                 img {
-                    width: 150px;
-                    height: 150px;
+                    width: 200px;
+                    height: 200px;
                 }
             }
         }
@@ -316,8 +399,8 @@ body {
         margin-bottom: 70px;
     }
 }
-//This is a media query for screen smaller than 1200px
-@media screen and (max-width: 1200px) {
+//This is a media query for screen smaller than 1220px
+@media screen and (max-width: 1220px) {
     #index {
         #section1 {
             .container {
@@ -343,7 +426,7 @@ body {
         #section3 {
             .advices {
                 margin: 10px;
-                width: 50% !important;
+                width: 50%;
             }
         }
     }
@@ -400,7 +483,8 @@ body {
 }
 //This is a media query for screen smaller than 648px
 @media screen and (max-width: 768px) {
-    #nutrition {
+    #nutrition,
+    #training {
         #section1 {
             .container {
                 flex-direction: column-reverse;
@@ -429,6 +513,16 @@ body {
             }
         }
     }
+    #section3 {
+        .container {
+            width: 100%;
+            flex-direction: column !important;
+        }
+        .advices {
+            margin: 10px 0 !important;
+            width: 90% !important;
+        }
+    }
 }
 
 //This is a media query for screen smaller than 648px
@@ -443,16 +537,7 @@ body {
             }
         }
     }
-    #section3 {
-        .container {
-            width: 100%;
-            flex-direction: column !important;
-        }
-        .advices {
-            margin: 10px 0;
-            width: 90% !important;
-        }
-    }
+
     #section2 {
         .image-container {
             align-items: center;
