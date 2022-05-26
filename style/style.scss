@@ -1,8 +1,5 @@
-@import "colors";
-$biggest-font: 40px;
-$big-font: 27px;
-$regular-font: 18px;
-$small-font: 14px;
+@import "components";
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +11,7 @@ body {
     color: $primary;
 }
 
+//This is the whole style for the navigation bar
 .navbar {
     font-size: $regular-font;
     padding: 10px 0;
@@ -23,9 +21,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    h1 {
+    .title {
+        font-size: $biggest-font;
         padding: 20px;
     }
+
     ul {
         li {
             display: inline-block;
@@ -54,8 +54,9 @@ body {
         font-size: $biggest-font;
     }
 }
-//This is the style for the index page
-.index {
+
+//This is the whole style for the index page
+#index {
     #section1 {
         display: flex;
         justify-content: center;
@@ -77,7 +78,7 @@ body {
                     font-size: $regular-font;
                     padding: 20px;
                 }
-                background: #4b468e9e;
+                background: $light-primary;
                 border-radius: 20px;
                 min-height: 40%;
                 width: 40%;
@@ -188,117 +189,18 @@ body {
         }
     }
 }
-@media screen and (max-width: 1200px) {
-    .index {
-        #section1 {
-            .container {
-                width: 90% !important;
-                height: fit-content !important;
-            }
-        }
-    }
-    #section2 {
-        .container {
-            width: 100% !important;
-            font-size: $small-font !important;
-            height: fit-content !important;
-            border-radius: 0 !important;
-        }
-        .image-container {
-            //align-items: center;
-            //flex-direction: column;
-            img {
-                width: 70% !important;
-                padding: 10px 0 !important;
-            }
-        }
-    }
-    #section3 {
-        .advices {
-            margin: 10px;
-            width: 50% !important;
-        }
-    }
-    .about-me {
-        #section1 {
-            .container {
-                width: 100% !important;
-            }
-        }
-    }
-}
 
-@media screen and (max-width: 850px) {
-    .index {
-        #section1 {
-            .container {
-                flex-direction: column;
-                border-radius: 0 !important;
-            }
-            .text-container {
-                width: 90% !important;
-                padding: 15px !important;
-            }
-            .image-container {
-                width: 90% !important;
-                padding: 15px;
-                img {
-                    width: 100% !important;
-                }
-            }
-        }
-    }
-    .about-me {
-        #section1 {
-            .container {
-                flex-direction: column !important;
-                width: 90% !important;
-                img {
-                    width: 90% !important;
-                }
-                .text-container {
-                    width: 90% !important;
-                }
-                .image-container {
-                    width: 90% !important;
-                    img {
-                        width: 90% !important;
-                    }
-                }
-            }
-        }
-    }
-}
-@media screen and (max-width: 648px) {
-    #section3 {
-        .container {
-            width: 100%;
-            flex-direction: column !important;
-        }
-        .advices {
-            margin: 10px 0;
-            width: 90% !important;
-        }
-    }
-    #section2 {
-        .image-container {
-            align-items: center;
-            flex-direction: column;
-            img {
-                width: 80% !important;
-            }
-        }
-    }
-}
-//Style for About Me page
-.about-me {
+//This is the style for the Whole About Me page
+#about-me {
     #section1 {
         display: flex;
         justify-content: center;
-        background: #4b468e9e;
+        background: $light-primary;
+        margin-bottom: 85px;
         .container {
             width: 70%;
             padding: 20px 0;
+
             border-radius: 20px;
             justify-content: space-between;
             align-items: center;
@@ -329,8 +231,325 @@ body {
             }
         }
     }
+    #section2 {
+        display: flex;
+        justify-content: center;
+        .container {
+            flex-direction: column;
+            border-radius: 20px;
+            width: 60%;
+            padding: 20px;
+            background: $white-transparent;
+        }
+        .form-container {
+            display: inline-block;
+        }
+    }
 }
 
+//This is the whole style for the Training page
+#training {
+    #section1 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: $light-primary;
+        .container {
+            justify-content: space-between;
+            width: 70%;
+            align-items: center;
+            .text-container {
+                width: 50%;
+                color: $white;
+                p,
+                span {
+                    padding: 25px;
+                }
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+    #section2 {
+        background: $white-transparent;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            padding: 20px;
+        }
+        .container {
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+        .text-container {
+            width: 40%;
+            padding: 20px;
+        }
+    }
+    .bonus {
+        background: none !important;
+        margin: 100px 0;
+        .container {
+            background: $light-primary;
+            flex-direction: row-reverse;
+            border-radius: 20px;
+        }
+        .image-container {
+            img {
+                width: 200px !important;
+                height: 200px !important;
+            }
+        }
+    }
+}
+
+//This is the style for the Whole Nutrition page
+#nutrition {
+    #section1 {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        background: $light-primary;
+        .container {
+            justify-content: space-between;
+            width: 70%;
+            align-items: center;
+            .text-container {
+                width: 50%;
+                color: $white;
+                p,
+                span {
+                    padding: 25px;
+                }
+            }
+            .image-container {
+                display: flex;
+                justify-content: center;
+                width: 40%;
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    #section2 {
+        background: $white-transparent;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2,
+        ul {
+            padding: 20px;
+        }
+        .container {
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+            width: 70%;
+        }
+        .text-container {
+            width: 40%;
+            padding: 20px;
+        }
+    }
+    #table-section {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .table-container {
+            min-width: 430px;
+            font-size: $small-font;
+            padding: 40px 0;
+            width: 70%;
+            table,
+            th,
+            td {
+                border: 2px solid $primary;
+            }
+            td {
+                padding: 10px;
+                width: 33%;
+                text-align: center;
+                a {
+                    font-weight: bold;
+                    color: $primary;
+                }
+            }
+            th {
+                font-size: $regular-font;
+            }
+        }
+    }
+    .table1 {
+        margin-bottom: 70px;
+    }
+}
+//This is a media query for screen smaller than 1220px
+@media screen and (max-width: 1220px) {
+    #index {
+        #section1 {
+            .container {
+                width: 90% !important;
+                height: fit-content !important;
+            }
+        }
+
+        #section2 {
+            .container {
+                width: 100% !important;
+                font-size: $small-font !important;
+                height: fit-content !important;
+                border-radius: 0 !important;
+            }
+            .image-container {
+                img {
+                    width: 70% !important;
+                    padding: 10px 0 !important;
+                }
+            }
+        }
+        #section3 {
+            .advices {
+                margin: 10px;
+                width: 50%;
+            }
+        }
+    }
+    #about-me {
+        #section1 {
+            .container {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+//This is a media query for screen smaller than 850px
+@media screen and (max-width: 850px) {
+    #index {
+        #section1 {
+            .container {
+                flex-direction: column;
+                border-radius: 0 !important;
+            }
+            .text-container {
+                width: 90% !important;
+                padding: 15px !important;
+            }
+            .image-container {
+                width: 90% !important;
+                padding: 15px;
+                img {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    #about-me {
+        #section1 {
+            .container {
+                flex-direction: column !important;
+                width: 90% !important;
+                img {
+                    width: 90% !important;
+                }
+                .text-container {
+                    width: 90% !important;
+                }
+                .image-container {
+                    width: 90% !important;
+                    img {
+                        width: 90% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+//This is a media query for screen smaller than 648px
+@media screen and (max-width: 768px) {
+    #nutrition,
+    #training {
+        #section1 {
+            .container {
+                flex-direction: column-reverse;
+                justify-content: center;
+                width: 100%;
+            }
+            .text-container {
+                width: 90% !important;
+            }
+            .image-container {
+                display: flex;
+                padding: 20px;
+                justify-content: center;
+                width: 85% !important;
+            }
+        }
+        #section2 {
+            .container {
+                flex-direction: column-reverse;
+                justify-content: center;
+                width: 100%;
+            }
+            .text-container {
+                border: none !important;
+                width: 90% !important;
+            }
+        }
+    }
+    #section3 {
+        .container {
+            width: 100%;
+            flex-direction: column !important;
+        }
+        .advices {
+            margin: 10px 0 !important;
+            width: 90% !important;
+        }
+    }
+}
+
+//This is a media query for screen smaller than 648px
+@media screen and (max-width: 648px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        ul {
+            li {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+
+    #section2 {
+        .image-container {
+            align-items: center;
+            flex-direction: column;
+            img {
+                width: 80% !important;
+            }
+        }
+    }
+}
+
+//This is the style for the whole footer
 footer {
     margin-top: 30px;
     min-height: 90px;

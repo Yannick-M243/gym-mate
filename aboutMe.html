@@ -6,16 +6,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Gym Mate</title>
+        <!--CSS link-->
         <link rel="stylesheet" href="./style/style.css">
+        <!--Font link-->
         <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
     </head>
 
     <body>
         <header>
+            <!--This is the navigation bar, it contains links to other pages-->
             <nav>
                 <div class="navbar">
                     <div>
-                        <h1 class="title">Gym Mate</h1>
+                        <span class="title">Gym Mate</span>
                     </div>
                     <div>
                         <ul>
@@ -28,10 +31,12 @@
                 </div>
             </nav>
         </header>
-        <div class="about-me">
+        <!--This main content of the about me page-->
+        <div id="about-me">
             <div class="heading">
                 <h1>About me</h1>
             </div>
+            <!--This is the first section of the about me page, it contains a text box and an image-->
             <section id="section1">
                 <div class="container">
                     <div class="image-container">
@@ -69,10 +74,37 @@
                     </div>
                 </div>
             </section>
+
+            <!--This is the second section of the about me page, it contains a form to get feeback-->
+            <section id="section2">
+                <div class="container">
+                    <h2>Feedback</h2>
+                    <span>How likely would you recommand my advice?</span>
+
+                    <form action="#">
+                        <div class="form-container">
+                            <span>Least likely</span><br>
+                            <input type="radio" id="feedback" name="feedback" value="1">
+                            <label for="one">1</label><br>
+                            <input type="radio" id="feedback" name="feedback" value="2">
+                            <label for="two">2</label><br>
+                            <input type="radio" id="feedback" name="feedback" value="3">
+                            <label for="three">3</label><br>
+                            <input type="radio" id="feedback" name="feedback" value="4">
+                            <label for="four">4</label><br>
+                            <input type="radio" id="feedback" name="feedback" value="5">
+                            <label for="five">5</label><br>
+                            <span>Most likely</span>
+                        </div>
+                    </form>
+
+                </div>
+            </section>
         </div>
+        <!--This is the footer of the page, it contains a notice and inks to other pages-->
         <footer>
             <div class="notice">
-                <span>Notice: All advices form this website are based on my personel experience,
+                <span>Notice: All advice form this website are based on my personal experience,
                     your are free to apply them or not. </span>
             </div>
             <div class="container">
@@ -89,4 +121,5 @@
             </div>
         </footer>
     </body>
+
 </html>
