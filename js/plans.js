@@ -5,6 +5,9 @@ let commentList = [];
 function load() {
   //checks if it is the first time to load this page
   if (sessionStorage.getItem("hasCodeRunBefore") === null) {
+    let commentTitle = document.getElementById("comments-title");
+    commentTitle.style.visibility = "hidden";
+
     sessionStorage.setItem("plans", JSON.stringify(planList));
     sessionStorage.setItem("userPlans", JSON.stringify(userPlans));
     sessionStorage.setItem("comments", JSON.stringify(commentList));
@@ -25,11 +28,6 @@ function load() {
       new Plan("Detox", 30, "Best diet plan to clean your body", "diet")
     );
     sessionStorage.setItem("plans", JSON.stringify(planList));
-
-    commentList.push(
-      new Comment("Yannick", "Great work Yannick keep it up", false)
-    );
-    sessionStorage.setItem("comments", JSON.stringify(commentList));
   }
 
   planList = JSON.parse(sessionStorage.getItem("plans"));
@@ -117,6 +115,9 @@ function load() {
 
     i = i + 1;
   });
+  if (i > 0) {
+    commentTitle.style.visibility = "visible";
+  }
 }
 
 //This is the constructur for Plan objects

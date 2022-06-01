@@ -23,7 +23,7 @@ $small-font: 14px;
 }
 @mixin button-secondary {
     margin: 10px 0;
-    color: $primary;
+    color: $light-primary;
     height: 28px;
     border: solid 2px $light-primary;
     border-radius: 10px;

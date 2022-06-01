@@ -585,7 +585,8 @@ body {
   margin-bottom: 70px;
 }
 
-#plans #section1 {
+#plans #section1,
+#saved4later #section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +596,8 @@ body {
   margin-bottom: 85px;
 }
 
-#plans #section1 .container {
+#plans #section1 .container,
+#saved4later #section1 .container {
   width: 50%;
   padding: 20px 0;
   border-radius: 20px;
@@ -613,17 +615,20 @@ body {
   background: #4b468e9e;
 }
 
-#plans #section1 .container h2 {
+#plans #section1 .container h2,
+#saved4later #section1 .container h2 {
   font-size: 27px;
   padding: 20px;
 }
 
-#plans #section1 .container p {
+#plans #section1 .container p,
+#saved4later #section1 .container p {
   font-size: 18px;
   padding: 20px;
 }
 
-#plans #section2 {
+#plans #section2,
+#saved4later #section2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -639,11 +644,13 @@ body {
           flex-direction: column;
 }
 
-#plans #section2 h2 {
+#plans #section2 h2,
+#saved4later #section2 h2 {
   padding: 20px 0;
 }
 
-#plans #section2 .container {
+#plans #section2 .container,
+#saved4later #section2 .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
@@ -652,7 +659,8 @@ body {
   padding: 20px 0;
 }
 
-#plans #section2 .container .item-container {
+#plans #section2 .container .item-container,
+#saved4later #section2 .container .item-container {
   margin: 20px;
   padding: 15px;
   display: -webkit-box;
@@ -672,16 +680,19 @@ body {
   width: 150px;
 }
 
-#plans #section2 .container .item-container .item-header {
+#plans #section2 .container .item-container .item-header,
+#saved4later #section2 .container .item-container .item-header {
   width: 100%;
   height: 15%;
 }
 
-#plans #section2 .container .item-container .item-header h3 {
+#plans #section2 .container .item-container .item-header h3,
+#saved4later #section2 .container .item-container .item-header h3 {
   text-align: center;
 }
 
-#plans #section2 .container .item-container .item-footer {
+#plans #section2 .container .item-container .item-footer,
+#saved4later #section2 .container .item-container .item-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,17 +708,19 @@ body {
   font-size: 14px;
 }
 
-#plans #section2 .container .item-container .item-footer button {
+#plans #section2 .container .item-container .item-footer button,
+#saved4later #section2 .container .item-container .item-footer button {
   width: 60%;
   margin: 10px 0;
-  color: #4b468e;
+  color: #4b468e9e;
   height: 28px;
   border: solid 2px #4b468e9e;
   border-radius: 10px;
   background: #bbcaca;
 }
 
-#plans #section2 .container .item-container .item-footer button:hover {
+#plans #section2 .container .item-container .item-footer button:hover,
+#saved4later #section2 .container .item-container .item-footer button:hover {
   color: #bbcaca;
   background: #4b468e9e;
   border: solid 2px #bbcaca;
@@ -715,7 +728,8 @@ body {
   cursor: grab;
 }
 
-#plans #section2 .container .item-container .item-desc {
+#plans #section2 .container .item-container .item-desc,
+#saved4later #section2 .container .item-container .item-desc {
   color: #fffafa;
   background: #4b468e51;
   border-radius: 10px;
@@ -723,13 +737,15 @@ body {
   height: 50%;
 }
 
-#plans #section2 .container .item-container .item-desc p {
+#plans #section2 .container .item-container .item-desc p,
+#saved4later #section2 .container .item-container .item-desc p {
   width: 100%;
   padding: 5px;
   font-size: 14px;
 }
 
-#plans #section2 .link-container {
+#plans #section2 .link-container,
+#saved4later #section2 .link-container {
   margin: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -747,7 +763,8 @@ body {
   background: #4b468e;
 }
 
-#plans #section2 a {
+#plans #section2 a,
+#saved4later #section2 a {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -756,12 +773,14 @@ body {
   font-size: 18px;
 }
 
-#plans #section2 .link-container:hover {
+#plans #section2 .link-container:hover,
+#saved4later #section2 .link-container:hover {
   background: #bbcaca;
   color: #4b468e;
 }
 
-#plans #section3 {
+#plans #section3,
+#saved4later #section3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,7 +798,8 @@ body {
   color: #fffafa;
 }
 
-#plans #section3 .container {
+#plans #section3 .container,
+#saved4later #section3 .container {
   padding: 20px 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -788,24 +808,29 @@ body {
   width: 70%;
 }
 
-#plans #section3 .container table {
+#plans #section3 .container table,
+#saved4later #section3 .container table {
   width: 55%;
 }
 
-#plans #section3 .container table td {
+#plans #section3 .container table td,
+#saved4later #section3 .container table td {
   vertical-align: top;
 }
 
-#plans #section3 .container input {
+#plans #section3 .container input,
+#saved4later #section3 .container input {
   width: 100%;
 }
 
-#plans #section3 .container #content {
+#plans #section3 .container #content,
+#saved4later #section3 .container #content {
   width: 100%;
   height: 50px;
 }
 
-#plans #section3 .container button {
+#plans #section3 .container button,
+#saved4later #section3 .container button {
   width: 50%;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -816,11 +841,13 @@ body {
   border-radius: 10px;
 }
 
-#plans #section3 .container button:hover {
+#plans #section3 .container button:hover,
+#saved4later #section3 .container button:hover {
   background: #bbcaca;
 }
 
-#plans #section3 .container #comments-section {
+#plans #section3 .container #comments-section,
+#saved4later #section3 .container #comments-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -830,12 +857,14 @@ body {
           flex-direction: column;
 }
 
-#plans #section3 .container #comments-section h3 {
+#plans #section3 .container #comments-section h3,
+#saved4later #section3 .container #comments-section h3 {
   text-align: center;
   padding: 20px 0;
 }
 
-#plans #section3 .container #comments-section .comment-box {
+#plans #section3 .container #comments-section .comment-box,
+#saved4later #section3 .container #comments-section .comment-box {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -843,15 +872,18 @@ body {
   color: black;
 }
 
-#plans #section3 .container #comments-section .comment-box p {
+#plans #section3 .container #comments-section .comment-box p,
+#saved4later #section3 .container #comments-section .comment-box p {
   height: 50px;
 }
 
-#plans #section3 .container #comments-section .like-btn {
+#plans #section3 .container #comments-section .like-btn,
+#saved4later #section3 .container #comments-section .like-btn {
   width: 50px;
 }
 
-#plans #section3 h2 {
+#plans #section3 h2,
+#saved4later #section3 h2 {
   padding: 20px 0;
   text-align: center;
 }
