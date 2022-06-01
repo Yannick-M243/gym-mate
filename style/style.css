@@ -357,6 +357,72 @@ body {
   color: #4b468e;
 }
 
+#about-me #section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fffafa;
+}
+
+#about-me #section3 .container {
+  background: #4b468e9e;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+#about-me #section3 .container table {
+  width: 55%;
+}
+
+#about-me #section3 .container table td {
+  vertical-align: top;
+}
+
+#about-me #section3 .container input {
+  width: 100%;
+}
+
+#about-me #section3 .container #message {
+  width: 100%;
+  height: 50px;
+}
+
+#about-me #section3 .container button {
+  width: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 10px 0;
+  color: #4b468e;
+  height: 28px;
+  border: solid 2px #bbcaca;
+  border-radius: 10px;
+}
+
+#about-me #section3 .container button:hover {
+  background: #bbcaca;
+}
+
+#about-me #section3 h2 {
+  color: #4b468e;
+  padding: 20px 0;
+  text-align: center;
+}
+
 #training #section1 {
   height: auto;
   display: -webkit-box;
@@ -712,7 +778,7 @@ body {
 #saved4later #section2 .container .item-container .item-footer button {
   width: 60%;
   margin: 10px 0;
-  color: #4b468e9e;
+  color: #4b468e;
   height: 28px;
   border: solid 2px #4b468e9e;
   border-radius: 10px;
@@ -760,7 +826,7 @@ body {
   height: 35px;
   border: solid 2px;
   border-radius: 10px;
-  background: #4b468e;
+  background: #4b468e9e;
 }
 
 #plans #section2 a,
@@ -796,6 +862,7 @@ body {
           flex-direction: column;
   background: #4b468e9e;
   color: #fffafa;
+  margin: 40px 0;
 }
 
 #plans #section3 .container,
@@ -885,6 +952,11 @@ body {
 #plans #section3 h2,
 #saved4later #section3 h2 {
   padding: 20px 0;
+  text-align: center;
+}
+
+#plans #section3 h3,
+#saved4later #section3 h3 {
   text-align: center;
 }
 

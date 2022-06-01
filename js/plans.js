@@ -152,6 +152,7 @@ function save4later(i) {
   sessionStorage.setItem("userPlans", JSON.stringify(userPlans));
 }
 
+//Function to create a new comment object
 function addComment() {
   commentList = JSON.parse(sessionStorage.getItem("comments"));
   let newComment = new Comment(
