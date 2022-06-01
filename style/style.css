@@ -592,15 +592,69 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 85px;
 }
 
 #plans #section1 .container {
+  width: 50%;
+  padding: 20px 0;
+  border-radius: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fffafa;
+  background: #4b468e9e;
+}
+
+#plans #section1 .container h2 {
+  font-size: 27px;
+  padding: 20px;
+}
+
+#plans #section1 .container p {
+  font-size: 18px;
+  padding: 20px;
+}
+
+#plans #section2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#plans #section2 h2 {
+  padding: 20px 0;
+}
+
+#plans #section2 .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   width: 70%;
   padding: 20px 0;
 }
 
-#plans #section1 .container .item-container {
-  padding: 20px;
+#plans #section2 .container .item-container {
+  margin: 20px;
+  padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,34 +668,196 @@ body {
   background-color: rgba(255, 255, 255, 0.323);
   border: 2px solid #4b468e9e;
   border-radius: 10px;
-  height: 250px;
-  width: 200px;
+  height: 200px;
+  width: 150px;
 }
 
-#plans #section1 .container .item-container .item-header {
+#plans #section2 .container .item-container .item-header {
   width: 100%;
   height: 15%;
 }
 
-#plans #section1 .container .item-container .item-header h3 {
+#plans #section2 .container .item-container .item-header h3 {
   text-align: center;
 }
 
-#plans #section1 .container .item-container .item-footer {
+#plans #section2 .container .item-container .item-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 35%;
+  font-size: 14px;
 }
 
-#plans #section1 .container .item-container .item-desc {
-  background: rgba(0, 0, 0, 0.141);
+#plans #section2 .container .item-container .item-footer button {
+  width: 60%;
+  margin: 10px 0;
+  color: #4b468e;
+  height: 28px;
+  border: solid 2px #4b468e9e;
+  border-radius: 10px;
+  background: #bbcaca;
+}
+
+#plans #section2 .container .item-container .item-footer button:hover {
+  color: #bbcaca;
+  background: #4b468e9e;
+  border: solid 2px #bbcaca;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+#plans #section2 .container .item-container .item-desc {
+  color: #fffafa;
+  background: #4b468e51;
+  border-radius: 10px;
   width: 100%;
   height: 50%;
 }
 
-#plans #section1 .container .item-container .item-desc p {
+#plans #section2 .container .item-container .item-desc p {
   width: 100%;
   padding: 5px;
   font-size: 14px;
+}
+
+#plans #section2 .link-container {
+  margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 35px;
+  border: solid 2px;
+  border-radius: 10px;
+  background: #4b468e;
+}
+
+#plans #section2 a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-decoration: none;
+  color: #bbcaca;
+  font-size: 18px;
+}
+
+#plans #section2 .link-container:hover {
+  background: #bbcaca;
+  color: #4b468e;
+}
+
+#plans #section3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #4b468e9e;
+  color: #fffafa;
+}
+
+#plans #section3 .container {
+  padding: 20px 0;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+#plans #section3 .container table {
+  width: 55%;
+}
+
+#plans #section3 .container table td {
+  vertical-align: top;
+}
+
+#plans #section3 .container input {
+  width: 100%;
+}
+
+#plans #section3 .container #content {
+  width: 100%;
+  height: 50px;
+}
+
+#plans #section3 .container button {
+  width: 50%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 10px 0;
+  color: #4b468e;
+  height: 28px;
+  border: solid 2px #bbcaca;
+  border-radius: 10px;
+}
+
+#plans #section3 .container button:hover {
+  background: #bbcaca;
+}
+
+#plans #section3 .container #comments-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#plans #section3 .container #comments-section h3 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#plans #section3 .container #comments-section .comment-box {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: white;
+  color: black;
+}
+
+#plans #section3 .container #comments-section .comment-box p {
+  height: 50px;
+}
+
+#plans #section3 .container #comments-section .like-btn {
+  width: 50px;
+}
+
+#plans #section3 h2 {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#saved4later {
+  min-height: 800px;
 }
 
 @media screen and (max-width: 1220px) {

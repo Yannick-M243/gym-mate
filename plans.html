@@ -14,7 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
         </script>
         <!--Js link-->
-        <script src="./js/main.js"></script>
+        <script src="./js/plans.js"></script>
         <script src="./js/animation.js"></script>
     </head>
 
@@ -41,23 +41,51 @@
         <!--This is main content of the plans page-->
         <div id="plans">
             <div class="heading">
-                <h1>Welcome to Gym Mate !</h1>
+                <h1>Plans</h1>
             </div>
             <section id="section1">
-                <div class="container" id="container">
-                    <div class="item-container">
-                        <div class="item-header">
-                            <h3>title</h3>
-                        </div>
-                        <div class="item-desc">
-                            <p>This is the description of the item above</p>
-                        </div>
-                        <div class="item-footer">
-                            <p>item-duration</p>
-                            <button class="get-plan">Get this plan</button>
-                        </div>
-                    </div>
+                <div class="container">
+                    <h2>Why having a training or diet plan? </h2>
+                    <p>When beginners want to get started, one of the most difficult thing is planning.
+                        If you want to get sarted but you don't known how to manage your time with school/work,
+                        getting a training and diet plan can make you save time and help you organise yourself.
+                    </p>
                 </div>
+            </section>
+            <section id="section2">
+                <h2>My personalised training and diet plans</h2>
+                <div class="container" id="container">
+                </div>
+                <a href="./saved4later.html">
+                    <div class="link-container">Saved items</div>
+                </a>
+            </section>
+            <section id="section3">
+                <h2>Leave me a comment</h2>
+                <div class="container">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="name">Full name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="author"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="comment">Content :</label></td>
+                                <td><textarea name="comment" id="content"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><button onclick="addComment()">Add Comment</button></td>
+                            </tr>
+                        </table>
+                    </form>
+                    <div id="comments-section">
+                        <h3>Comments section</h3>
+                    </div>
             </section>
         </div>
         <!--This is the footer of the page, it contains a notice and inks to other pages-->

@@ -248,11 +248,7 @@ body {
         button {
             height: 30px;
             width: 100px;
-            color: $white;
-            background: $light-primary;
-            border-radius: 10px;
-            border: none;
-            margin: 10px;
+            @include button-primary;
         }
         button:hover {
             background: $secondary;
@@ -420,24 +416,51 @@ body {
         display: flex;
         justify-content: center;
 
+        margin-bottom: 85px;
         .container {
-            display: flex;
+            width: 50%;
+            padding: 20px 0;
+            border-radius: 20px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            h2 {
+                font-size: $big-font;
+                padding: 20px;
+            }
+            p {
+                font-size: $regular-font;
+                padding: 20px;
+            }
+            background: $light-primary;
+        }
+    }
+    #section2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h2 {
+            padding: 20px 0;
+        }
+
+        .container {
             flex-flow: row wrap;
             width: 70%;
-            height: auto;
             padding: 20px 0;
 
             .item-container {
                 margin: 20px;
-                padding: 20px;
+                padding: 15px;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 background-color: $white-transparent;
                 border: 2px solid $light-primary;
                 border-radius: 10px;
-                height: 250px;
-                width: 200px;
+                height: 200px;
+                width: 150px;
 
                 .item-header {
                     width: 100%;
@@ -447,11 +470,27 @@ body {
                     }
                 }
                 .item-footer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     width: 100%;
                     height: 35%;
+                    font-size: $small-font;
+                    button {
+                        width: 60%;
+                        @include button-secondary;
+                    }
+                    button:hover {
+                        color: $secondary;
+                        background: $light-primary;
+                        border: solid 2px $secondary;
+                        cursor: grab;
+                    }
                 }
                 .item-desc {
-                    background: rgba(0, 0, 0, 0.141);
+                    color: $white;
+                    background: #4b468e51;
+                    border-radius: 10px;
                     width: 100%;
                     height: 50%;
                     p {
@@ -462,7 +501,94 @@ body {
                 }
             }
         }
+        .link-container {
+            margin: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 35px;
+            border: solid 2px;
+            border-radius: 10px;
+            background: $primary;
+        }
+        a {
+            align-self: center;
+            text-decoration: none;
+            color: $secondary;
+            font-size: $regular-font;
+        }
+        .link-container:hover {
+            background: $secondary;
+            color: $primary;
+        }
     }
+    #section3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: $light-primary;
+        color: $white;
+        .container {
+            padding: 20px 0;
+            flex-direction: column;
+            width: 70%;
+            table {
+                width: 55%;
+                td {
+                    vertical-align: top;
+                }
+            }
+            input {
+                width: 100%;
+            }
+            #content {
+                width: 100%;
+                height: 50px;
+            }
+            button {
+                width: 50%;
+                align-self: flex-end;
+                margin: 10px 0;
+                color: $primary;
+                height: 28px;
+                border: solid 2px $secondary;
+                border-radius: 10px;
+            }
+            button:hover {
+                background: $secondary;
+            }
+
+            #comments-section {
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                .comment-box {
+                    height: fit-content;
+                    background: white;
+                    color: black;
+                    p {
+                        height: 50px;
+                    }
+                }
+                .like-btn {
+                    width: 50px;
+                }
+            }
+        }
+        h2 {
+            padding: 20px 0;
+            text-align: center;
+        }
+    }
+}
+
+#saved4later {
+    min-height: 800px;
 }
 //This is a media query for screen smaller than 1220px
 @media screen and (max-width: 1220px) {

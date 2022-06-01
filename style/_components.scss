@@ -2,7 +2,7 @@
 
 //colors
 $primary: #4b468e;
-$light-primary:#4b468e9e;
+$light-primary: #4b468e9e;
 $secondary: #bbcaca;
 $white: #fffafa;
 $white-transparent: rgba(255, 255, 255, 0.323);
@@ -12,3 +12,20 @@ $biggest-font: 40px;
 $big-font: 27px;
 $regular-font: 18px;
 $small-font: 14px;
+
+//buttons
+@mixin button-primary {
+    color: $white;
+    background: $light-primary;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+@mixin button-secondary {
+    margin: 10px 0;
+    color: $primary;
+    height: 28px;
+    border: solid 2px $light-primary;
+    border-radius: 10px;
+    background: $secondary;
+}
