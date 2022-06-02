@@ -58,6 +58,7 @@ body {
 
 //This is the whole style for the index page
 #index {
+    display: none;
     #section1 {
         display: flex;
         justify-content: center;
@@ -307,11 +308,13 @@ body {
         height: auto;
         display: flex;
         justify-content: center;
-        background: $light-primary;
+
         .container {
+            background: $light-primary;
             justify-content: space-between;
             width: 70%;
             align-items: center;
+            border-radius: 20px;
             .text-container {
                 width: 50%;
                 color: $white;
@@ -337,6 +340,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: 100px 0;
 
         h2 {
             padding: 20px;
@@ -374,11 +378,13 @@ body {
         height: auto;
         display: flex;
         justify-content: center;
-        background: $light-primary;
+
         .container {
             justify-content: space-between;
             width: 70%;
             align-items: center;
+            background: $light-primary;
+            border-radius: 20px;
             .text-container {
                 width: 50%;
                 color: $white;
@@ -398,7 +404,9 @@ body {
             }
         }
     }
-    #section2 {
+    #section2,
+    #section3 {
+        margin: 100px 0;
         background: $white-transparent;
         height: auto;
         display: flex;
@@ -419,8 +427,18 @@ body {
             width: 40%;
             padding: 20px;
         }
+        button {
+            width: 30%;
+            height: 30px;
+            @include button-secondary;
+        }
+        button:hover {
+            background: $light-primary;
+            color: $secondary;
+        }
     }
-    #table-section {
+    #table-section,
+    #table-section2 {
         height: auto;
         display: flex;
         flex-direction: column;

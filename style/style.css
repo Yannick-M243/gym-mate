@@ -65,6 +65,10 @@ body {
   font-size: 40px;
 }
 
+#index {
+  display: none;
+}
+
 #index #section1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,10 +435,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #4b468e9e;
 }
 
 #training #section1 .container {
+  background: #4b468e9e;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -442,6 +446,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 20px;
 }
 
 #training #section1 .container .text-container {
@@ -482,6 +487,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 100px 0;
 }
 
 #training #section2 h2 {
@@ -529,7 +535,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #4b468e9e;
 }
 
 #nutrition #section1 .container {
@@ -540,6 +545,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: #4b468e9e;
+  border-radius: 20px;
 }
 
 #nutrition #section1 .container .text-container {
@@ -567,7 +574,9 @@ body {
   height: 200px;
 }
 
-#nutrition #section2 {
+#nutrition #section2,
+#nutrition #section3 {
+  margin: 100px 0;
   background: rgba(255, 255, 255, 0.323);
   height: auto;
   display: -webkit-box;
@@ -583,11 +592,14 @@ body {
 }
 
 #nutrition #section2 h2,
-#nutrition #section2 ul {
+#nutrition #section2 ul,
+#nutrition #section3 h2,
+#nutrition #section3 ul {
   padding: 20px;
 }
 
-#nutrition #section2 .container {
+#nutrition #section2 .container,
+#nutrition #section3 .container {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
@@ -600,12 +612,32 @@ body {
   width: 70%;
 }
 
-#nutrition #section2 .text-container {
+#nutrition #section2 .text-container,
+#nutrition #section3 .text-container {
   width: 40%;
   padding: 20px;
 }
 
-#nutrition #table-section {
+#nutrition #section2 button,
+#nutrition #section3 button {
+  width: 30%;
+  height: 30px;
+  margin: 10px 0;
+  color: #4b468e;
+  height: 28px;
+  border: solid 2px #4b468e9e;
+  border-radius: 10px;
+  background: #bbcaca;
+}
+
+#nutrition #section2 button:hover,
+#nutrition #section3 button:hover {
+  background: #4b468e9e;
+  color: #bbcaca;
+}
+
+#nutrition #table-section,
+#nutrition #table-section2 {
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -619,7 +651,8 @@ body {
           align-items: center;
 }
 
-#nutrition #table-section .table-container {
+#nutrition #table-section .table-container,
+#nutrition #table-section2 .table-container {
   min-width: 430px;
   font-size: 14px;
   padding: 40px 0;
@@ -628,22 +661,28 @@ body {
 
 #nutrition #table-section .table-container table,
 #nutrition #table-section .table-container th,
-#nutrition #table-section .table-container td {
+#nutrition #table-section .table-container td,
+#nutrition #table-section2 .table-container table,
+#nutrition #table-section2 .table-container th,
+#nutrition #table-section2 .table-container td {
   border: 2px solid #4b468e;
 }
 
-#nutrition #table-section .table-container td {
+#nutrition #table-section .table-container td,
+#nutrition #table-section2 .table-container td {
   padding: 10px;
   width: 33%;
   text-align: center;
 }
 
-#nutrition #table-section .table-container td a {
+#nutrition #table-section .table-container td a,
+#nutrition #table-section2 .table-container td a {
   font-weight: bold;
   color: #4b468e;
 }
 
-#nutrition #table-section .table-container th {
+#nutrition #table-section .table-container th,
+#nutrition #table-section2 .table-container th {
   font-size: 18px;
 }
 

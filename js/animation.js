@@ -1,9 +1,29 @@
+let isVisible = false;
+let isVisible2 = false;
+
 $(document).ready(function () {
-  /* $(".item-container").mouseover(function () {
-    // $(".item-desc").css("display", "block");
-    $(".item-desc").stop().slideUp();
+  $("#index").slideDown(1500);
+
+  $("#table-section").hide();
+  $("#table-section2").hide();
+
+  $("#section2 > button").click(function () {
+    if (isVisible) {
+      $("#table-section").hide();
+      isVisible = false;
+    } else {
+      $("#table-section").show();
+      isVisible = true;
+    }
   });
-  $(".item-container").mouseout(function () {
-    $(".item-desc").slideDown();
-  });*/
+
+  $("#section3 > button").click(function () {
+    if (isVisible2) {
+      $("#table-section2").hide();
+      isVisible2 = false;
+    } else {
+      $("#table-section2").show();
+      isVisible2 = true;
+    }
+  });
 });
