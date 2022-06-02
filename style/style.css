@@ -578,7 +578,9 @@ body {
 #nutrition #section3 {
   margin: 100px 0;
   background: rgba(255, 255, 255, 0.323);
-  height: auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,6 +630,7 @@ body {
   border: solid 2px #4b468e9e;
   border-radius: 10px;
   background: #bbcaca;
+  margin: 20px 0;
 }
 
 #nutrition #section2 button:hover,

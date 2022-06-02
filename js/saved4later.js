@@ -1,6 +1,8 @@
 function load() {
   //checks if it is the first time to load this page
   if (sessionStorage.getItem("hasCodeRunBefore") === null) {
+
+    //initializing session variables
     sessionStorage.setItem("hasCodeRunBefore", true);
     sessionStorage.setItem("plans", JSON.stringify(planList));
     sessionStorage.setItem("userPlans", JSON.stringify(userPlans));
@@ -24,6 +26,7 @@ function load() {
     sessionStorage.setItem("plans", JSON.stringify(planList));
   }
 
+  //fetching user's plans saved for later
   userPlans = JSON.parse(sessionStorage.getItem("userPlans"));
   let i = 0;
   let container = document.getElementById("container");
@@ -74,7 +77,7 @@ function load() {
       btn.classList.add("get-plan");
       btn.innerHTML = "Remove";
       btn.onclick = function () {
-        removeItem(uPlanId); //calling the function save4later() when the btn is clicked
+        removeItem(uPlanId); //calling the function removeItem() when the btn is clicked
       };
 
       itemFooter.appendChild(btn);
@@ -86,6 +89,7 @@ function load() {
   }
 }
 
+//This function removes the selected plan from the saved4later list
 function removeItem(index) {
   userPlans = JSON.parse(sessionStorage.getItem("userPlans"));
 

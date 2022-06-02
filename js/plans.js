@@ -1,3 +1,4 @@
+//Intializing array variables to store objects
 let planList = [];
 let userPlans = [];
 let commentList = [];
@@ -8,6 +9,7 @@ function load() {
     let commentTitle = document.getElementById("comments-title");
     commentTitle.style.visibility = "hidden";
 
+    //initializing session variables
     sessionStorage.setItem("plans", JSON.stringify(planList));
     sessionStorage.setItem("userPlans", JSON.stringify(userPlans));
     sessionStorage.setItem("comments", JSON.stringify(commentList));
@@ -34,10 +36,10 @@ function load() {
   let i = 0;
   let container = document.getElementById("container");
 
-  //This loop creates a item container for each plan
+  //This loop creates an item container for each plan
   planList.forEach(function (plan) {
     let planId = i;
-    //creatin the container that will hold the item detail
+    //creating the container that will hold the item detail
     let itemContainer = document.createElement("div");
     itemContainer.classList.add("item-container");
 
@@ -82,13 +84,14 @@ function load() {
     container.appendChild(itemContainer);
   });
 
+  //fetching all comments from the session storage
   commentList = JSON.parse(sessionStorage.getItem("comments"));
   i = 0;
   let commentSection = document.getElementById("comments-section");
 
-  //This loop will create comment box for each existing comments
+  //This loop will create a comment box for each existing comments
   commentList.forEach(function (cmt) {
-    let cmdId = i;
+    let cmdId = i;//get the id of each comment
 
     let commentBox = document.createElement("div");
     commentBox.classList.add("comment-box");
@@ -109,7 +112,7 @@ function load() {
       btn.innerHTML = "Like";
     }
     btn.onclick = function () {
-      like(cmdId);
+      like(cmdId);//if the like button is clicked, it will call the function like()
     };
     commentSection.appendChild(btn);
 
@@ -128,6 +131,7 @@ function Plan(name, duration, description, type) {
   this.type = type;
 }
 
+//This is th constructor for Comment objects
 function Comment(author, content, isLiked) {
   this.author = author;
   this.content = content;
@@ -165,6 +169,7 @@ function addComment() {
   location.reload();
 }
 
+//This function checks if the user have like or not the comment and changes the like status accordingly
 function like(index) {
   commentList = JSON.parse(sessionStorage.getItem("comments"));
   if (commentList[index].isLiked) {

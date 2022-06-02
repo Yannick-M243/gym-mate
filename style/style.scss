@@ -408,7 +408,7 @@ body {
     #section3 {
         margin: 100px 0;
         background: $white-transparent;
-        height: auto;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -417,6 +417,7 @@ body {
         ul {
             padding: 20px;
         }
+
         .container {
             flex-direction: row-reverse;
             justify-content: space-around;
@@ -431,6 +432,7 @@ body {
             width: 30%;
             height: 30px;
             @include button-secondary;
+            margin: 20px 0;
         }
         button:hover {
             background: $light-primary;
@@ -472,7 +474,7 @@ body {
     }
 }
 
-//This is the style for the Whole plans page
+//This is the style for the Whole plans and saved4later page
 #plans,
 #saved4later {
     #section1 {
