@@ -1,12 +1,12 @@
 # gym-mate
 
 ##### Table of Contents  
-[Description](#description)  
-[Purpose](#purpose) 
-[Languages](#Languages) 
-[Tools](#Tools) 
-[Installation](#Installation) 
-[Contributor](#Contributor) 
+- [Description](#description)  
+- [Purpose](#purpose) 
+- [Languages](#Languages) 
+- [Tools](#Tools) 
+- [Installation](#Installation) 
+- [Contributor](#Contributor) 
 
 ## Description
 Gym mate is a fitness advice Website, 
