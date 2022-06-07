@@ -8,23 +8,23 @@
 [Installation](#Installation) 
 [Contributor](#Contributor) 
 
-##Description
+## Description
 Gym mate is a fitness advice Website, 
 where people who wants to get started with the gym can come and get free advice to start
 
-##Purpose
+## Purpose
 The pupose of this project was to apply HTML, SCSS, and JavaScript skills learned at HyperionDev.
 
-##Languages
+## Languages
 - HTML
 - SCSS
 - Javascript
 
-##Tools
+## Tools
 - IDE: Visual Studio Code
 
-##Installation 
+## Installation 
 To start this project you just need to clone it and to open the "index.html" file in a browser
 
-##Contributor 
+## Contributor 
 - Yannick Boteti Makwenge : yannickmakwenge@gmail.com
