@@ -33,16 +33,4 @@ $(document).ready(function () {
       isVisible2 = true;
     }
   });
-
-  //This is a dropdown menu that shows details on mouseover and hide them on mouseleave
-  $(".dropdown-menu")
-    .accordion({
-      animated: "bounceslide",
-      autoHeight: true,
-      collapsible: true,
-      event: "mouseover",
-    })
-    .on("mouseleave", function () {
-      $(this).accordion("option", "active", false);
-    });
 });
